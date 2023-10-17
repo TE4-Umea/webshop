@@ -1,4 +1,5 @@
-import './Footer.css';
+import "../components/Footer.css"
+
 
 import logo from "../assets/logo.png"
 

@@ -1,6 +1,7 @@
-import "./landingPage.css"
+import "./LandingPage.css"
 
-import background from "../assets/background.jpg"
+import { Link } from "react-router-dom"
+
 import product1 from "../assets/product1.jpg"
 import northface from "../assets/northface.png"
 import middlebreaker from "../assets/middlebreaker.jpg"
@@ -38,12 +39,15 @@ function landingPage() {
 
             <div className="section-header">
                 <h2>Bäst Säljare</h2>
-
             </div>
+
+            <Link to="/ProductPage">
+                
+            </Link> 
+
 
             <section className="bestsellers">
                 <article className="product-card">
-                    <a href="productpage.html">
                         <div className="product-image">
                             <img src={product1} alt="Product Name"/>
                         </div>
@@ -53,7 +57,6 @@ function landingPage() {
                             <p className="product-price">$99.99</p>
                             <button className="add-to-cart">Lägg till varukorg</button>
                         </div>
-                    </a>
                 </article>
                 <article className="product-card">
                     <a href="productpage.html">

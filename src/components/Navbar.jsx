@@ -1,15 +1,15 @@
-import './App.css';
+import "../components/Navbar.css"
 
 import logo from "../assets/logo.png"
-import home from "../assets/home.jpg"
+import home from "../assets/home.png"
 import favorite from "../assets/favorite.jpg"
-import search from "../assets/search.jpg"
-import cart from "../assets/cart.jpg"
+import search from "../assets/search.png"
+import cart from "../assets/cart.png"
 
 
 function Navbar() {
     return (
-        <navbar className="navbar">
+        <nav className="navbar">
         <div className="top">
             <div className="logo">
                 <img src={logo} alt="logo" className="logo"/>
@@ -57,22 +57,22 @@ function Navbar() {
         </div>
 
         <div className="bottom">
-            <a href="#" class="navcontent">Herr</a>
-            <a href="#" class="navcontent">Dam</a>
-            <a href="#" class="navcontent">Barn</a>
-            <a href="#" class="navcontent">Utrustning</a>
-            <a href="#" class="navcontent">Fritid</a>
-            <a href="#" class="navcontent">Fiske</a>
-            <a href="#" class="navcontent">Sport</a>
-            <a href="#" class="navcontent">Varumärke</a>
-            <a href="#" class="navcontent">Om oss</a>
+            <a href="#" className="navcontent">Herr</a>
+            <a href="#" className="navcontent">Dam</a>
+            <a href="#" className="navcontent">Barn</a>
+            <a href="#" className="navcontent">Utrustning</a>
+            <a href="#" className="navcontent">Fritid</a>
+            <a href="#" className="navcontent">Fiske</a>
+            <a href="#" className="navcontent">Sport</a>
+            <a href="#" className="navcontent">Varumärke</a>
+            <a href="#" className="navcontent">Om oss</a>
         </div>
 
         <div className="ad">
             Stort sortiment, Snabba leveranser, Fria byten, 30 dagars öppet köp | 1.000.000 kvar till fri frakt
         </div>
 
-    </navbar>
+    </nav>
 
     );
 }

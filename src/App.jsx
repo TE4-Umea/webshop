@@ -2,43 +2,29 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import "./App.css"
 
-import NavBar from './componets/NavBar'
+import NavBar from './componets/Navbar'
 import Footer from './componets/Footer'
 
-import HomePage from './pages/HomePage'
+import LandingPage from './pages/LandingPage'
+import ProductPage from './pages/ProductPage'
 
 
-
-import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [data, setData] = useState([])
-
-  async function fetchData() {
-    await fetch('http://localhost:3000')
-      .then(res => res.json())
-      .then(result => {
-        setData(result)
-        console.log(result)
-      }).catch(err => {
-        console.log(err)
-      })
-  }
-
 
   return (
     <>
       <BrowserRouter>
         <NavBar />
+
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/ShellPage' element={<ShellPage />} />
-          <Route path='/CartPage' element={<CartPage />} />
-          <Route path='/ContactPage' element={<ContactPage />} />
-          <Route path='/ProductsPage' element={<ProductsPage />} />
+
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/ProductPage' element={<ProductPage />} />
 
         </Routes>
+
         <Footer />
       </BrowserRouter>
 
