@@ -73,18 +73,6 @@ a {
     text-decoration: none;
 }
 
-a,
-a:link,
-a:visited {
-    position: relative;
-    text-decoration: none;
-}
-
-a:hover,
-a:active {
-    color: transparent;
-    background-color: transparent;
-}
 
 html {
     scroll-behavior: smooth;
@@ -94,11 +82,14 @@ html {
     margin-top: var(--flow-space, 1em)
 }
 
-.container {
+.container2 {
     width: min(54rem, 100vw - var(--space-xl));
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    background-color: white;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .section {
@@ -113,8 +104,6 @@ body {
     width: 100%;
     height: 100%;
     align-items: center;
-    background-color: white;
-    color: white;
 }
 
 .left-column {
@@ -131,10 +120,11 @@ body {
     width: 80%;
   }
    
-  .product-description {
-    border-bottom: 1px solid #E1E8EE;
+  .product-description2 {
     margin-bottom: 20px;
+    border-bottom: 1px solid rgb(225, 232, 238);
   }
+
   .product-description span {
     font-size: 12px;
     color: #358ED7;
@@ -142,6 +132,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
   }
+
   .product-description h1 {
     font-weight: 300;
     font-size: 52px;
@@ -168,6 +159,7 @@ body {
     background-color: #fff;
     cursor: pointer;
     transition: all .5s;
+    margin: 5px;
   }
    
   .product-size button:hover,
@@ -209,12 +201,13 @@ body {
     margin: 15px;
   }
 
-  .product-price {
+  .product-price2 {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
   }
    
-  .product-price span {
+  .product-price2 span {
     font-size: 26px;
     font-weight: 300;
     color: #43474D;
@@ -242,4 +235,8 @@ body {
     background-color: #64af3d;
   }
 
-  
+.contentbackground {
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

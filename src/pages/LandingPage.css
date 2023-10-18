@@ -57,27 +57,24 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: var(--base-font);
-    color: var(--color-fg);
-    background-size: 100%;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: var(--base-font);
+  color: var(--color-fg);
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  align-items: center;
 
-    background:
-    /* top, transparent black, faked with gradient */ 
-    linear-gradient(
-      rgba(0, 0, 0, 0.4), 
-      rgba(0, 0, 0, 0.4)
-    ),
-    /* bottom, image */
-    url(../assets/background.jpg);
-    background-color: #ffffff;
-
-
+  background:
+  /* top, transparent black, faked with gradient */ 
+  linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ),
+  /* bottom, image */
+  url(../assets/background.jpg);
 }
 
 h1 {
@@ -87,6 +84,7 @@ h1 {
     margin: 0;
 }
 
+
 p {
     font-size: var(--step-0);
 }
@@ -95,42 +93,6 @@ a {
     font-size: var(--step-0);
     color: rgb(0, 0, 0);
     text-decoration: none;
-}
-
-a,
-a:link,
-a:visited {
-    position: relative;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-a:hover,
-a:active {
-    color: transparent;
-    background-color: transparent;
-}
-
-a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all .5s ease-in-out 0s;
-    transition: all .5s ease-in-out 0s;
-}
-
-a:hover::before,
-a:active::before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
 }
 
 .hrStyle {
@@ -296,6 +258,7 @@ a:active::before {
   .section-header {
     text-align: center;
     background-color: white;
+    color: black;
   }
   
   .section-header h2 {

@@ -1,6 +1,7 @@
 import "./LandingPage.css"
 
 import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
 
 import product1 from "../assets/product1.jpg"
 import northface from "../assets/northface.png"
@@ -8,6 +9,25 @@ import middlebreaker from "../assets/middlebreaker.jpg"
 
 
 function landingPage() {
+
+    const [data, setData] = useState([])
+
+    async function fetchData() {
+        await fetch('http://localhost:3000/product')
+            .then(res => res.json())
+            .then(result => {
+                setData(result)
+                console.log(result)
+            }).catch(err => {
+                console.log(err)
+            })
+    }
+
+    useEffect(() => {
+        fetchData()
+        console.log(data)
+    }, [])
+
     return (
         <>
             <div className='section flow'>
@@ -41,13 +61,11 @@ function landingPage() {
                 <h2>Bäst Säljare</h2>
             </div>
 
-            <Link to="/ProductPage">
-                
-            </Link> 
-
 
             <section className="bestsellers">
+                
                 <article className="product-card">
+                    <Link to="/ProductPage">
                         <div className="product-image">
                             <img src={product1} alt="Product Name"/>
                         </div>
@@ -57,9 +75,11 @@ function landingPage() {
                             <p className="product-price">$99.99</p>
                             <button className="add-to-cart">Lägg till varukorg</button>
                         </div>
+                    </Link>
                 </article>
+
                 <article className="product-card">
-                    <a href="productpage.html">
+                    <a href="/ProductPage">
                         <div className="product-image">
                             <img src={product1} alt="Product Name"/>
                         </div>

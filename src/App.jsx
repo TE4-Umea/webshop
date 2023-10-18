@@ -1,15 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import "./App.css"
-
-import NavBar from './componets/Navbar'
-import Footer from './componets/Footer'
+import NavBar from './components/Navbar'
+import Footer from './components/Footer'
 
 import LandingPage from './pages/LandingPage'
 import ProductPage from './pages/ProductPage'
-
-
-import './App.css'
 
 function App() {
 
@@ -17,14 +12,12 @@ function App() {
     <>
       <BrowserRouter>
         <NavBar />
-
         <Routes>
 
           <Route path='/' element={<LandingPage />} />
           <Route path='/ProductPage' element={<ProductPage />} />
 
         </Routes>
-
         <Footer />
       </BrowserRouter>
 

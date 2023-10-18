@@ -1,5 +1,7 @@
 import "../components/Navbar.css"
 
+import { Link } from "react-router-dom"
+
 import logo from "../assets/logo.png"
 import home from "../assets/home.png"
 import favorite from "../assets/favorite.jpg"
@@ -12,7 +14,9 @@ function Navbar() {
         <nav className="navbar">
         <div className="top">
             <div className="logo">
+            <Link to="/">
                 <img src={logo} alt="logo" className="logo"/>
+            </Link>
             </div>
 
             <div className="wrap">

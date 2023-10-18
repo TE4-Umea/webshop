@@ -5,14 +5,15 @@ import product1 from "../assets/product1.jpg"
 function ProductPage() {
     return (
         <>
-            <main className="container">
+            <div className="contentbackground">
+            <div className="container2">
                 <div className="left-column">
                     <img src={product1} alt=""/>
                 </div>
 
                 <div className="right-column">
 
-                    <div className="product-description">
+                    <div className="product-description2">
                         <span>Tröja</span>
                         <h1>Tröja</h1>
                         <p>Episk tröja som är väldigt tröjig</p>
@@ -31,12 +32,13 @@ function ProductPage() {
                         </div>
                     </div>
 
-                    <div className="product-price">
+                    <div className="product-price2">
                         <span>$99.99</span>
                         <button className="cart-btn">Lägg till</button>
                     </div>
                 </div>
-            </main>
+            </div>
+            </div>
         </>
     )
 }
