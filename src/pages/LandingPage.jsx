@@ -9,25 +9,6 @@ import middlebreaker from "../assets/middlebreaker.jpg"
 
 
 function landingPage() {
-
-    const [data, setData] = useState([])
-
-    async function fetchData() {
-        await fetch('http://localhost:3000/product')
-            .then(res => res.json())
-            .then(result => {
-                setData(result)
-                console.log(result)
-            }).catch(err => {
-                console.log(err)
-            })
-    }
-
-    useEffect(() => {
-        fetchData()
-        console.log(data)
-    }, [])
-
     return (
         <>
             <div className='section flow'>

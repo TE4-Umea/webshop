@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 
 import LandingPage from './pages/LandingPage'
 import ProductPage from './pages/ProductPage'
+import ProductsPage from './pages/ProductsPage'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
 
           <Route path='/' element={<LandingPage />} />
           <Route path='/ProductPage' element={<ProductPage />} />
+          <Route path='/ProductsPage' element={<ProductsPage />} />
 
         </Routes>
         <Footer />
